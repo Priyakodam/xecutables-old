@@ -1,0 +1,39 @@
+/* src/components/HeroSection.css */
+.hero-section {
+  background-image: url('https://media.licdn.com/dms/image/D4D12AQFOJnTae1krQA/article-cover_image-shrink_720_1280/0/1721019226333?e=2147483647&v=beta&t=xnT-AiFul0-3aVlliUzNJHWeuejsfKMJzdnOWfgraZA');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 800px;
+}
+
+.hero-buttons .btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+  transform: scale(1.05);
+}
