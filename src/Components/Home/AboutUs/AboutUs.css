@@ -35,8 +35,8 @@
   }
   
   .about-us-button {
-    background-color: #28a745;
-    color: #fff;
+    background: linear-gradient(to right bottom, rgb(0, 123, 255), rgb(255, 7, 58));
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 25px;
