@@ -180,7 +180,7 @@
 .keypoint h2::before {
         content: '';
         position: absolute;
-        top: 0;
+        top: -10px;
         left: 0;
         width: 50px;
         height: 4px;
@@ -342,6 +342,10 @@
 .content-section,  .image-section, .progress-section {
         /* margin-left: 20px; */
         padding-left: 20px;
+}
+
+.progress-section-1{
+        margin-top: -28px;
 }
 
 
