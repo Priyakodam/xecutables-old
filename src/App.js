@@ -12,7 +12,8 @@ import Product from "./Components/Product/Product";
 import Service from "./Components/Service/Service";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
-
+import EngineeringService from "./Components/Service/EngineeringService";
+import ProfessionalServices from "./Components/Service/ProfessionalServices";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAvm8gw5gFla6WNAiiaX8rXEHApbLiMkqk",
@@ -46,8 +47,8 @@ function App() {
                     <Route path="/service" element={<Service/>}/> 
                     <Route path="/product" element={<Product/>} />
                     <Route path="/contact" element={<Contact/>} /> 
-                    
-                    
+                    <Route path="/engservice" element={<EngineeringService/>} /> 
+                    <Route path="/proservice" element={<ProfessionalServices/>} />
                 </Routes>
                 <Footer/>
                 
