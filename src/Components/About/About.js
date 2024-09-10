@@ -347,6 +347,8 @@ import image6 from './Images/aboutus-10.jpeg';
 import image7 from './Images/aboutus-11.webp';
 import image8 from './Images/aboutus-12.webp';
 import image9 from './Images/aboutus-13.webp';
+import { Fade } from 'react-reveal';
+
 
 
 
@@ -389,15 +391,21 @@ const About = () => {
         </div>
       </section>
 
-
+      
       <section className="sec-2-container">
+      <Fade right>
         <div className="sec-2-text-section">
           <strong >To provide crisp and smart business solutions for a better tomorrow.</strong>
         </div>
+        </Fade>
+        <Fade left>
         <div className="sec-2-image-section">
           <img src={image4} alt="Business Solutions" />
         </div>
+        </Fade>
+
       </section>
+
 
 
 
