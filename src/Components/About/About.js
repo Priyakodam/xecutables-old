@@ -344,7 +344,7 @@ import image1 from './Images/aboutus-8.jpg';
 import image4 from './Images/aboutus-4.jpg';
 import image5 from './Images/aboutus-9.webp';
 import image6 from './Images/aboutus-10.jpeg';
-import image7 from './Images/aboutus-11.webp';
+import image7 from './Images/aboutus-16.jpeg';
 import image8 from './Images/aboutus-12.webp';
 import image9 from './Images/aboutus-13.webp';
 import { Fade } from 'react-reveal';
@@ -432,6 +432,8 @@ const About = () => {
 
 
       <section className="sec-4-mission-container">
+ 
+
         <div className="mission-heading">
           <h1>Our Mission</h1>
           <p>
@@ -440,47 +442,46 @@ const About = () => {
             unimaginable and practical solutions.
           </p>
         </div>
+
         <div className="sec-4-grid-container">
+        <Fade bottom>
+
           <div className="sec-4-grid-item">
             <img src={image5} alt="Image 1" />
             <div className="sec-4-grid-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-              <p>Cras ultricies ligula sed magna dictum porta.</p>
-              <p>Pellentesque in ipsum id orci porta dapibus.</p>
-              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+              <p>Understand the client’s needs with an open mind and be a part of striking conversation to create intriguing and apt solutions.</p>
+              
             </div>
           </div>
+          </Fade >
+          <Fade bottom>
           <div className="sec-4-grid-item">
             <img src={image6} alt="Image 2" />
             <div className="sec-4-grid-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-              <p>Cras ultricies ligula sed magna dictum porta.</p>
-              <p>Pellentesque in ipsum id orci porta dapibus.</p>
-              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+              <p>The process of developing the solutions is like composing a song or narrating a story. The sole aim is to create value and be able to bring a smile to our clients.</p>
+            
             </div>
           </div>
+          </Fade >
+          <Fade bottom>
           <div className="sec-4-grid-item">
-            <img src={image7} alt="Image 3" />
+            <img src={image7} alt="Image 3" style={{height:'214px'}}/>
             <div className="sec-4-grid-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-              <p>Cras ultricies ligula sed magna dictum porta.</p>
-              <p>Pellentesque in ipsum id orci porta dapibus.</p>
-              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+              <p>Be accepting and open to receive feedback and strive to constantly retrospect and improve the existing processes for a better future.</p>
+            
             </div>
           </div>
+          </Fade >
+          <Fade bottom>
           <div className="sec-4-grid-item">
             <img src={image8} alt="Image 4" />
             <div className="sec-4-grid-text">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              <p>Vivamus lacinia odio vitae vestibulum vestibulum.</p>
-              <p>Cras ultricies ligula sed magna dictum porta.</p>
-              <p>Pellentesque in ipsum id orci porta dapibus.</p>
-              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
+              <p>Thinking the unimaginable and creating next-level solutions are our core skills that set us apart. Executing the impossible is in the DNA of Xecutables.</p>
+              
             </div>
           </div>
+          </Fade >
+
         </div>
       </section>
 
@@ -542,7 +543,7 @@ const About = () => {
       <div className="row main-row">
         {/* First Section */}
         {/* <div className="col-md-4"> */}
-        <div className="col-lg-4 col-md-6 col-sm-12">
+        <div className="col-lg-4 col-md-6 col-sm-12 ">
 
           <div className="content-section">
             <h2>We are habituated to creating smart, capable and reliable solutions.</h2>
@@ -558,7 +559,7 @@ const About = () => {
         <div className="col-lg-4 col-md-6 col-sm-12">
 
           <div className="image-section">
-            <img src={image9} alt="Smart Solutions" className="img-fluid" />
+            <img src={image9} alt="Smart Solutions" className="img-fluid" style={{height:'240px'}} />
           </div>
         </div>
 
