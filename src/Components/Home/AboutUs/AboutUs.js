@@ -16,7 +16,7 @@ function AboutUs() {
       <div className="about-us-container">
         <Fade left>
           <div className="about-us-content">
-            <h2>Our Agency Story</h2>
+            <h2>About</h2>
             <p>Check out our company story and work process</p>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

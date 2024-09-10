@@ -25,7 +25,7 @@ const Hero = () => {
   };
   return (
     <div className="video-background-container">
-    <div className="video-overlay"></div> {/* Overlay */}
+    {/* <div className="video-overlay"></div> */}
     {/* <video
       ref={videoRef}
       autoPlay
