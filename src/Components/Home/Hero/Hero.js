@@ -1,24 +1,57 @@
-import React from "react"
-import { Fade } from 'react-reveal';
+import React, { useState, useRef } from 'react';
+import video from "../Images/video.mp4";
+// import { Fade } from 'react-reveal';
+import { Carousel } from 'react-bootstrap';
+import image1 from '../../About/Images/aboutus-4.jpg';
+import cc5 from '../../About/Images/aboutus-1.jpg';
+import part1 from '../../About/Images/aboutus-2.jpg';
+import computer123 from '../../About/Images/aboutus-3.jpg';
+import computer1 from '../../About/Images/aboutus-13.webp';
+import applelaptop from '../../About/Images/aboutus-8.jpg'
+import "./Hero.css"
 
 const Hero = () => {
+
+  const [isPlaying, setIsPlaying] = useState(true);
+  const videoRef = useRef(null);
+
+  const togglePlay = () => {
+    if (isPlaying) {
+      videoRef.current.pause();
+    } else {
+      videoRef.current.play();
+    }
+    setIsPlaying(!isPlaying);
+  };
   return (
-    <div className="hero-section">
-    <div className="overlay">
-      <div className="hero-content text-center">
-        <Fade top>
-          <h1>Welcome to Our Business</h1>
-          <p>Providing Excellence in Every Service</p>
-          <div className="hero-buttons mt-4">
-            <a href="#about-us" className="btn btn-primary mx-2">About Us</a>
-            <a href="#products" className="btn btn-secondary mx-2">Products</a>
-            <a href="#engineering-services" className="btn btn-primary mx-2">Engineering Services</a>
-            <a href="#professional-services" className="btn btn-secondary mx-2">Professional Services</a>
-            <a href="#service-maintenance" className="btn btn-primary mx-2">Service & Maintenance</a>
-          </div>
-        </Fade>
+    <div className="video-background-container">
+    <div className="video-overlay"></div> {/* Overlay */}
+    {/* <video
+      ref={videoRef}
+      autoPlay
+      loop
+      muted
+      playsInline
+      src={video}
+      className="video-background"
+    >
+      Your browser does not support the video tag.
+    </video> */}
+    <img className="video-background" src='https://s3.wns.com/S3_5/Images/GenericHeaderBanner/DesktopImg/19227/3120/Shared-Services_HD-1980x1080px.jpg'/>
+    <div className='textcontainer' >
+      {/* <div className="videored-dash" ></div> */}
+      <div className="main-text">
+        <span className="line1">Delivering and integrating solutions that are futuristic,</span>
+        <span className="line2">  practical &amp; comprehensive</span>
+      </div>
+      <div className="sub-text">
+        <span className="subline1">We provide always our best services to our clients and always try to</span>
+        <span className="subline2">achieve our client's trust and satisfaction</span>
       </div>
     </div>
+    {/* <button className="toggle-button" onClick={togglePlay}>
+      {isPlaying ? '❚❚' : '▶'}
+    </button> */}
   </div>
   )
 }
