@@ -353,7 +353,10 @@
 
 @media (max-width: 767px){
 
-
+        .progress-section-1{
+                margin-top: 0px;
+                margin-bottom: -45px;
+        }
 
 .sec1-banner-text .sec1-heading {
     font-size: 3rem;
@@ -442,12 +445,14 @@
         .main-progress
         .progress-section-1{
                 width: 150%;
-                margin-left: 25%;   
+                margin-left: 25%; 
+                margin-top: 0px;
+
              }
 
              .keypoint
              .key-point-2{
                 margin-top: 48px;
-                padding-bottom: 4px;
+                padding-bottom: 27px;
              }
 }
