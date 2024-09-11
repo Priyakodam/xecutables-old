@@ -200,14 +200,7 @@
       }
       
       .recommended-badge {
-        /* background-color: white;
-        color: yellow;
-        font-size: 19px;
-        padding: 3px 1px;
-        border-radius: 12px;
-        position: absolute;
-        top: 5px;
-        right: 182px; */
+       
 
         font-size: 14px;
         font-weight: bold;
@@ -232,6 +225,119 @@
 
 
 
+      @media (min-width: 768px) and (max-width:1024px){
+
+         
+      /* Plans container */
+      .plans-container {
+        display: flex;
+        flex-direction: column;
+       
+      }
+
+
+      .plan{
+      background-color: #ffffff;
+      border-radius: 50px;
+      padding: 30px;
+      width: 90%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+      margin: 0 auto;
+  }
+
+
+
+    /* Recommended badge */
+    .recommended {
+      position: relative;
+      background-color: #ffeeba;
+    }
+    
+    .recommended-badge {
+     
+
+      font-size: 16px;
+      font-weight: bold;
+      border: 10px;
+      border-radius: 15px;
+      background: white;
+      color: #f79c29;
+      position: absolute;
+      top: 11px;
+      right: 259px;
+      padding: 5px;
+
+    }
+    
+    .recommended-badge::before {
+      content: '★';
+      padding-right: 5px;
+    }
+    
+
+      }
+
+
+
+
       
+
+
+      
+      @media (max-width:767px){
+
+         
+        /* Plans container */
+        .plans-container {
+          display: flex;
+          flex-direction: column;
+         
+        }
+  
+  
+        .plan{
+        background-color: #ffffff;
+        border-radius: 50px;
+        padding: 30px;
+        width: 90%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        margin: 0 auto;
+    }
+  
+  
+  
+      /* Recommended badge */
+      .recommended {
+        position: relative;
+        background-color: #ffeeba;
+      }
+      
+      .recommended-badge {
+       
+  
+        font-size: 16px;
+        font-weight: bold;
+        border: 10px;
+        border-radius: 15px;
+        background: white;
+        color: #f79c29;
+        position: absolute;
+        top: 11px;
+        right: 82px;
+        padding: 5px;
+  
+      }
+      
+      .recommended-badge::before {
+        content: '★';
+        padding-right: 5px;
+      }
+      
+  
+        }
+  
+  
 
       
