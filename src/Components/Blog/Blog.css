@@ -1,0 +1,249 @@
+/* General styles for larger screens */
+.blog-banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .blogbanner-image {
+    width: 100%;
+    height: 80%;
+  }
+  
+  .blogbanner-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  .blogbanner-text h1 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  
+  .blogcontainer {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  
+  .background-blogcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .text-content {
+    background-color: #eaf9e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    color: #333;
+  }
+  
+  .text-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .text-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  .blog-image {
+    width: 45%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 20px;
+    margin-bottom: 15px;
+    border-bottom-left-radius: 100px;
+  }
+
+  .blog-image1 {
+    width: 45%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 20px;
+    margin-bottom: 15px;
+    border-top-right-radius: 100px;
+  }
+
+
+
+  .button-blogcontainer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .button-blogcontainer .btn {
+    background: linear-gradient(to right, #A90E83, #0150E1);
+    color: white;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .button-blogcontainer .btn:hover {
+    background: linear-gradient(to right, #0150E1, #fcc5ee);
+  }
+  
+  .homecontainer {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-image2 {
+    width: 95%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 20px;
+    margin-bottom: 15px;
+  }
+
+  /* Responsive styles for tablets (max-width: 768px) */
+  @media only screen and (max-width: 768px) {
+    .blog-banner {
+      height: 300px;
+    }
+  
+    .blogbanner-text h1 {
+      font-size: 2.5rem;
+    }
+  
+    .blogcontainer {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  
+    .background-blogcontainer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .text-content {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .blog-image {
+      width: 100%;
+    }
+
+    .blog-image1 {
+        width: 100%;
+      }
+
+      .blog-image2 {
+        width: 100%;
+      }
+  
+    .button-blogcontainer .btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+
+    .homecontainer {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    
+      .card {
+        padding: 15px;
+      }
+    
+      .blog-image2 {
+        width: 100%;
+        margin: 0;
+      }
+    
+      .subheading {
+        font-size: 1.5rem;
+      }
+    
+      .text-content p {
+        font-size: 1rem;
+      }
+  }
+  
+  /* Responsive styles for mobile screens (max-width: 480px) */
+  @media only screen and (max-width: 480px) {
+    .blog-banner {
+      height: 200px;
+    }
+  
+    .blogbanner-text h1 {
+      font-size: 1.8rem;
+    }
+  
+    .text-content {
+      font-size: 1rem;
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .text-content h3 {
+      font-size: 1.5rem;
+    }
+  
+    .blogcontainer {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  
+    .button-blogcontainer .btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .background-blogcontainer {
+      gap: 10px;
+    }
+
+    .homecontainer {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+    
+      .card {
+        padding: 10px;
+      }
+    
+      .blog-image2 {
+        width: 100%;
+        margin: 0;
+      }
+    
+      .subheading {
+        font-size: 1.2rem;
+      }
+    
+      .text-content p {
+        font-size: 0.9rem;
+      }
+  }
+  
