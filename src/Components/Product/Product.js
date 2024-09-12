@@ -8,7 +8,7 @@ import productsideimg1 from './ProductImages/productsideimg2.jpeg';
 import mobilecard from './ProductImages/Mobile card management.png';
 import Parking from './ProductImages/Parking management.png';
 import Lift from './ProductImages/Lift management.png';
-import productsser from './ProductImages/productsser.png';
+import productsser from './ProductImages/probimg.avif';
 import Education from './ProductImages/Education.webp';
 
 const Product = () => {
