@@ -13,12 +13,13 @@ import ServiceMaintenance from './ServiceMaintenance/ServiceMaintenance'
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <Hero/>
       <AboutUs />
       <Products />
       <EngineeringServices />
-      <ProfessionalServices />
       <ServiceMaintenance />
+      <ProfessionalServices />
+      
     </div>
   )
 }

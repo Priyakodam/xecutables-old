@@ -7,6 +7,7 @@ import Mobile from './ProductImages/Mobile card management.png';
 import Parking from './ProductImages/Parking management.png';
 import Lift from './ProductImages/Lift management.png';
 import productsser from './ProductImages/productsser.png';
+import Education from './ProductImages/Education.webp';
 
 const Product = () => {
   const navigate = useNavigate(); // Initialize the navigate hook
@@ -83,38 +84,9 @@ const Product = () => {
         <button className='custom-button' onClick={handleReadMore}>READ MORE</button>
       </div>
 
-      {/* <div className="content-section row">
-        
-      <div className="column">
-      <img src={Mobile} alt="Mobile Card Management" />
-      <h3>Mobile Card Management</h3>
-      <p>Integrating mobile card provision system which can be used by employees, visitors and contractors to download their credentials into their mobiles.</p>
-        </div>
-        <div className="column">
-        <h3>Lift Management</h3>
-        <p> Touchless solutions to make lifts in the workplace secure by deploy access card usage in the lifts.</p>
-        </div>
-        <div className="column">
-        <h3>Parking Management</h3>
-        <p>A reimagined parking management can help track vehicles by name place and make the visitor check-in process automated.</p>
-        </div>
-      </div> */}
+      
 
-<div className="card-container">
-  <div className="card">
-    <h3>Card Title 1</h3>
-    <p>This is the content of the first card. You can add text, images, or other elements here.</p>
-  </div>
-  <div className="card">
-    <h3>Card Title 2</h3>
-    <p>This is the content of the second card. You can add text, images, or other elements here.</p>
-  </div>
-  <div className="card">
-    <h3>Card Title 2</h3>
-    <p>This is the content of the second card. You can add text, images, or other elements here.</p>
-  </div>
-  
-</div>
+     
 
       
 
