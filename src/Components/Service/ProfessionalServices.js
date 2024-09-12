@@ -15,7 +15,7 @@ import './ProfessionalService.css';
 function ProfessionalServices() {
   return (
     <div style={{ position: 'relative', textAlign: 'center' }}>
-      <img className src={proban} alt="engbanner" style={{ width: '100%' }} />
+      <img className='pservicebanimg' src={proban} alt="engbanner"/>
       <h1 className='professionalheading'>
       Professional Services
       </h1>

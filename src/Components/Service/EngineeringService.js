@@ -13,7 +13,7 @@ import { Fade } from 'react-reveal';
 function EngineeringService() {
   return (
     <div style={{ position: 'relative', textAlign: 'center' }}>
-      <img src={engbanner} alt="engbanner" style={{ width: '100%' }} />
+      <img className='engbanimg' src={engbanner} alt="engbanner"  />
       <h1 className='engineeringheading'>
         Engineering Service
       </h1>
