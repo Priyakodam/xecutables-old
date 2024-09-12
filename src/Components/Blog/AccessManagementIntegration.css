@@ -1,4 +1,4 @@
-.managesolution-banner {
+.access-banner {
         background-image: url('./BlogImages/ban-acc.png');
         /* Add the URL to your banner image */
         background-size: cover;
@@ -10,7 +10,7 @@
         align-items: center;
 }
 
-.managesolution-banner-text {
+.access-banner-text {
         color: white;
         font-size: 3rem;
         font-weight: bold;
@@ -19,14 +19,14 @@
 
 
 /* Image Under Banner Styles */
-.managesolution-image-container {
+.access-image-container {
         display: flex;
         justify-content: center;
         margin-top: 50px;
         /* Add some spacing between the banner and image */
 }
 
-.managesolution-image-under-banner {
+.access-image-under-banner {
         max-width: 100%;
         /* Ensure the image is responsive */
         height: auto;
@@ -36,7 +36,7 @@
 }
 
 
-.managesolution-text-container {
+.access-text-container {
         width: 80%;
         /* Container takes 90% of the width */
         margin: 0 auto;
@@ -58,14 +58,14 @@
 
 /* Responsive adjustments */
 @media (max-width: 1200px) {
-        .managesolution-text-container {
+        .access-text-container {
                 width: 95%;
                 /* Slightly increase the width for medium screens */
         }
 }
 
 @media (max-width: 768px) {
-        .managesolution-text-container {
+        .access-text-container {
                 width: 100%;
                 /* Full width on small screens */
                 padding: 15px;
@@ -76,7 +76,7 @@
 }
 
 @media (max-width: 480px) {
-        .managesolution-text-container {
+        .access-text-container {
                 padding: 10px;
                 /* Further reduce padding on very small screens */
                 font-size: 0.9rem;
@@ -90,7 +90,7 @@
 
 
 
-.managesolution-image-row-container {
+.access-image-row-container {
         display: flex;
         /* Flexbox for row layout */
         justify-content: center;
@@ -103,7 +103,7 @@
         /* Allow wrapping on smaller screens */
 }
 
-.managesolution-image-item-container {
+.access-image-item-container {
         text-align: center;
         /* Center the text under each image */
         margin: 0 20px;
@@ -112,7 +112,7 @@
         /* Set width of each image container */
 }
 
-.managesolution-image-item {
+.access-image-item {
         width: 100%;
         /* Image takes full width of the container */
         height: auto;
@@ -137,7 +137,7 @@ p {
 
 /* Responsive styling for smaller screens */
 @media (max-width: 768px) {
-        .managesolution-image-item-container {
+        .access-image-item-container {
                 width: 200px;
                 /* Reduce width on smaller screens */
                 margin: 0 10px;
@@ -146,12 +146,12 @@ p {
 }
 
 @media (max-width: 480px) {
-        .managesolution-image-row-container {
+        .access-image-row-container {
                 flex-direction: column;
                 /* Stack items vertically on very small screens */
         }
 
-        .managesolution-image-item-container {
+        .access-image-item-container {
                 width: 100%;
                 /* Full width on small screens */
                 margin-bottom: 20px;
