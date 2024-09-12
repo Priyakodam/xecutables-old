@@ -22,8 +22,16 @@
   
   .blogbanner-text h1 {
     font-size: 3rem;
-    font-weight: 500;
+    font-weight: bold;
+
   }
+
+
+  .subheading1 {
+    color: #212ea0;
+    font-weight: bold;
+    margin-top: 73px;
+}
   
   .blogcontainer {
     font-family: 'Roboto', sans-serif;
@@ -99,6 +107,7 @@
     cursor: pointer;
     transition: background 0.3s ease;
   }
+
   
   .button-blogcontainer .btn:hover {
     background: linear-gradient(to right, #0150E1, #fcc5ee);
@@ -134,9 +143,26 @@
     .blog-banner {
       height: 300px;
     }
-  
+  .last-text-img{
+    display: flex;
+    flex-direction: column;
+    width: 103%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.subheading1 {
+  color: #212ea0;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
     .blogbanner-text h1 {
       font-size: 2.5rem;
+      font-weight: bold;
     }
   
     .blogcontainer {
@@ -146,7 +172,7 @@
   
     .background-blogcontainer {
       flex-direction: column;
-      text-align: center;
+      text-align: justify;
     }
   
     .blogtext-content {
@@ -169,6 +195,7 @@
     .button-blogcontainer .btn {
       font-size: 1rem;
       padding: 8px 16px;
+      margin-bottom: 20px;
     }
 
     .blog_container {
@@ -190,7 +217,7 @@
       }
     
       .blogtext-content p {
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
   }
   
@@ -202,6 +229,23 @@
   
     .blogbanner-text h1 {
       font-size: 1.8rem;
+    }
+
+
+    .last-text-img{
+      display: flex;
+      flex-direction: column;
+      width: 106%;
+    }
+
+
+    .blog_container {
+      margin-left: 19px;
+      margin-right: 18px;
+  }
+
+    .subheading1 {
+      text-align:justify ;
     }
   
     .blogtext-content {
@@ -235,6 +279,7 @@
     
       .blogcard {
         padding: 10px;
+        margin-top: -27px;
       }
     
       .blog-image2 {

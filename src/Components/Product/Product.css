@@ -271,5 +271,24 @@
     .product-button {
         margin-top: 20px;
       }
+
+      .last-section-product{
+        display: flex;
+        flex-direction: column;
+      }
+      .productleft-section{
+        width: 100%;
+      }
+
+      .productright-section{
+        width: 100%;
+        margin-left: 9px;
+        margin-top: 73px;
+      }
+
+
+      .product-img{
+        width: 100%;
+      }
   }
   
