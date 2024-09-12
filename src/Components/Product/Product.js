@@ -1,9 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './Product.css';
-import productbanner from './ProductImages/productbanner.jpg';
-import product1 from './ProductImages/product1.png'; 
-import Mobile from './ProductImages/Mobile card management.png';
+import { Fade } from 'react-reveal';
+import productbanner from './ProductImages/probanimg2.png';
+import productsideimg from './ProductImages/productsideimg1.jpeg'; 
+import productsideimg1 from './ProductImages/productsideimg2.jpeg';
+import mobilecard from './ProductImages/Mobile card management.png';
 import Parking from './ProductImages/Parking management.png';
 import Lift from './ProductImages/Lift management.png';
 import productsser from './ProductImages/productsser.png';
@@ -26,60 +28,103 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="product-section">
-        <img src={product1} alt="Additional" className="product-image" />
+      <div className="container">
+      <Fade right>
+      <div className="image-container">
+        <img
+          src={productsideimg}
+          alt="Account Opening in Financial Services"
+          className="productresponsive-image"
+        />
       </div>
-      <div className="content-section">
-        <div className="column">
-          <h2>Employee Management</h2>
-          <p>
-            The management of employees’ physical identity and access is crucial for any organisation’s safety. The employee management helps with all the major areas including card readers, biometrics, video surveillance, etc. All the major functions are integrated in a single platform.
-          </p>
-        </div>
-        <div className="column">
-          <h2>Visitor Management</h2>
-          <p>
-            Nebula’s visitor management system is critical for an organisation as it automates the lifecycle of visitors in any company. It is capable of pre-registering the potential visitors, background checks, security checks, access authorization, check-in/ check-out, and centralized reporting.
-          </p>
-        </div>
+      </Fade>
+      <Fade left>
+      <div className="text-container">
+        <h1>Employee Management</h1>
+        <p>
+        The management of employees’ physical identity and access is crucial for any organisation’s safety. The employee management helps with all the major areas including card readers, biometrics, video surveillance, etc. All the major functions are integrated in a single platform.
+        </p>
+       
+       
       </div>
-      <div className='productmanagement-section'>
-        <div className="productmanagement-item">
-          <img src={Mobile} alt="Mobile Card Management" />
-          <h3>Mobile Card Management</h3>
-          <p>Integrating mobile card provision system which can be used by employees, visitors and contractors to download their credentials into their mobiles.</p>
-        </div>
-        <div className="productmanagement-item">
-          <img src={Lift} alt="Lift Management" />
-          <h3>Lift Management</h3>
-          <p> Touchless solutions to make lifts in the workplace secure by deploy access card usage in the lifts.</p>
-        </div>
-        <div className="productmanagement-item">
-          <img src={Parking} alt="Parking Management" />
-          <h3>Parking Management</h3>
-          <p>A reimagined parking management can help track vehicles by name place and make the visitor check-in process automated.</p>
-        </div>
-      </div>
+      </Fade>
+    </div>
 
-      <div className='productlast-section row'>
-        <div className='col-md-1'> </div>
-        <div className='col-md-5'>
-          <img src={productsser} alt="Additional" className="productsser-image" />
-        </div>
-        <div className='col-md-5'>
-          <div className="product-info">
-            <h3>Nebula integrates various facets in an organisation into one platform including</h3>
-            <ul className='product-features'>
-              <li>Desk Booking system.</li>
-              <li>Access Card inventory management.</li>
-              <li>Contractor management and external registration portal.</li>
-              <li>Tenant management system.</li>
-            </ul>
+
+    <section className="product-section">
+      <div className="product-container">
+        <Fade left>
+          <div className="product-content">
+            <h2>Visitor Management</h2>
+          
+            <p>
+            Nebula’s visitor management system is a critical for an organisation as it automates the lifecycle of visitors in any company. It is capable of pre-registering the potential visitors, background checks, security checks, access authorization, check-in/ check-out and centralized reporting.
+            </p>
+           
+          
+          </div>
+        </Fade>
+        <Fade right>
+          <div className="product1-image">
+            <img src={productsideimg1} alt="Agency Story" />
+          </div>
+        </Fade>
+      </div>
+    </section>
+
+    <div className="prostats-section">
+      <Fade left>
+        <div className="stats-container">
+          <div className="productstat-card">
+            <i className="fas fa-users"></i>
+            <img src={mobilecard} alt="engbanner" style={{ width: '25%' }} />
+            <h2>Mobile card management</h2>
+            <p>Integrating mobile card provision system which can be used by employees, visitors and contractors to download their credentials into their mobiles.</p>
+          </div>
+          <div className="productstat-card">
+            <i className="fas fa-check-circle"></i>
+            <img src={Lift} alt="engbanner" style={{ width: '25%' }} />
+            <h2>Lift management</h2>
+            <p>Touchless solutions to make lifts in the workplace secure by deploy access card usage in the lifts.</p>
+          </div>
+          <div className="productstat-card">
+            <i className="fas fa-shield-alt"></i>
+            <img src={Parking} alt="engbanner" style={{ width: '25%' }} />
+            <h2>Parking management</h2>
+            <p>A reimagined parking management can help track vehicles by name place and make the visitor check-in process automated.</p>
           </div>
         </div>
-        <div className='col-md-1'> </div>
+        </Fade>
       </div>
 
+  
+      <Fade right>
+      <div className="productleft-section">
+      <img className='proimban' src={productsser} alt="engbanner"  />
+      </div>
+      </Fade>
+
+      <Fade left>
+      <div className="productright-section">
+        <h2>Nebula integrates various facets in an organisation into one platform including</h2>
+        <p>
+        Desk Booking system.
+        </p>
+        <p>
+        Access Card inventory management..
+        </p>
+        <p>
+        Contractor management and external registration portal.
+        </p>
+        <p>
+        Tenant management system.
+        </p>
+        
+       
+      </div>
+      </Fade>
+     
+     
       <div className='text-center productbutton-section'>
         <button className='custom-button' onClick={handleReadMore}>READ MORE</button>
       </div>

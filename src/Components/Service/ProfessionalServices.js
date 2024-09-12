@@ -48,7 +48,7 @@ function ProfessionalServices() {
             </div>
             <div className="divider"></div>
             <p>
-            We develop devise a custom plan to migrate a company’s data from external systems into a Product suite. Based on the number of external systems involved, the eco-space is then prepared for the testing of user experience or production deployment.
+            We develop devise a custom plan to migrate a company's data from external systems into a Product suite. Based on the number of external systems involved, the eco-space is then prepared for the testing of user experience or production deployment.
             </p>
             <div className="content">
               <img src={proimg1} alt="engbanner" style={{ width: '100%' }} />

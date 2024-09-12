@@ -77,7 +77,7 @@
     padding: 100px 0; /* Adjust padding for top and bottom space */
     color: white; /* Ensure text stands out */
     margin-bottom: 30px;
-    background-image: linear-gradient(to right, #A90E83, #0150E1);
+    background-image: linear-gradient(to right, white, #0150E1);
     padding: 50px 0px;
   }
   
