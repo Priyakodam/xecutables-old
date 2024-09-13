@@ -42,15 +42,15 @@ const Contact = () => {
       <div className="contact-info">
         <div className="info-item">
           <span className="icon">📍</span>
-          <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+          <p>Level 17, 9 Castlereagh Street, Sydney-2000, NSW , Australia</p>
         </div>
         <div className="info-item">
           <span className="icon">📞</span>
-          <p>+1235 2355 98</p>
+          <p>+61470556686</p>
         </div>
         <div className="info-item">
           <span className="icon">📧</span>
-          <p>info@yoursite.com</p>
+          <p>info@executables.com</p>
         </div>
         <div className="info-item">
           <span className="icon">🌐</span>
