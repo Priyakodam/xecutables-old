@@ -158,3 +158,77 @@ p {
                 /* Add space between stacked items */
         }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.managesolution-container {
+        display: flex;
+        align-items: flex-start; /* Align items at the start of the container */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        gap: 20px; /* Add space between image and card */
+        margin-left: 95px;
+      }
+      
+      .managesolution-image-container {
+        flex: 1; /* Allows image container to grow and shrink */
+        max-width: 50%; /* Control the maximum width of the image container */
+      }
+      
+      .managesolution-image-under-banner {
+        width: 60%; /* Ensure the image fits within its container */
+        height: 330px; /* Maintain aspect ratio */
+      }
+      
+      .managesolution-card {
+        flex: 1; /* Allows card container to grow and shrink */
+        max-width: 30%; /* Control the maximum width of the card container */
+        height: 330px;
+        margin-top: 55px;
+        padding: 20px; /* Add padding inside the card */
+        border: 1px solid #ddd; /* Add border for the card */
+        border-radius: 8px; /* Add rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for a card effect */
+      }
+      
+      .managesolution-card-heading {
+        font-size: 24px; /* Adjust heading size */
+        margin-bottom: 10px; /* Add space below the heading */
+        text-align: center;
+      }
+      
+      .card-points {
+        list-style: none; /* Remove default list styling */
+        padding: 0; /* Remove default padding */
+      }
+      
+      .card-points li {
+        margin-bottom: 8px; /* Add space between list items */
+      }
+      
+      @media (max-width: 768px) {
+        .managesolution-container {
+          flex-direction: column; /* Stack image and card on top of each other on small screens */
+          align-items: center; /* Center items horizontally */
+        }
+      
+        .managesolution-image-container,
+        .managesolution-card {
+          max-width: 100%; /* Ensure both elements fit within the screen width */
+        }
+      }
+      

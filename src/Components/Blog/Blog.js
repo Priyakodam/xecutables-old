@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Blog.css';
 import blogbanner from './BlogImages/blogban-1.png';
 import Blog1 from './BlogImages/Blog1.png';
@@ -6,12 +7,17 @@ import Blog2 from './BlogImages/Blog2.png';
 import Assets from './BlogImages/Assets.png'
 
 const Product = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (path) => {
+    navigate(path);
+  };
   return (
     <div>
       <div className="blog-banner">
         <img src={blogbanner} alt="Banner" className="blogbanner-image" />
         <div className="blogbanner-text">
-          <h1>Blog</h1>
+          <span className='blog-head'>Blog</span>
         </div>
       </div>
 
@@ -23,7 +29,7 @@ const Product = () => {
               With the evolution of software and technology, access management has also evolved to become more secure. Keycards, also known as swipe cards, prox cards, or fobs, are used to grant access through electrically-powered doors. The access may be granted by tapping, swiping, or inserting the card in the slot. This has made the traditional metal key redundant in most spaces.The access may be granted by tapping, swiping, or inserting the card in the slot.
             </p>
             <div className="button-blogcontainer">
-              <button className="btn">Explore More</button>
+            <button className="btn" onClick={() => handleNavigate('/accessmanagementintegration')}>Explore More</button>
             </div>
           </div>
           <img src={Blog2} alt="People working" className="blog-image" />
@@ -37,7 +43,7 @@ const Product = () => {
               Thousands of people walk in and out of the airports every day. This makes airports a critical place to be secured and to reduce any suspicious activities. Maintaining safety at airports requires a lot of systems which have continued to improve in the past. To mitigate the risks, there are processes to manage every step.
             </p>
             <div className="button-blogcontainer">
-              <button className="btn">Explore More</button>
+            <button className="btn" onClick={() => handleNavigate('/managingsolutions')}>Explore More</button>
             </div>
           </div>
         </div>
@@ -55,7 +61,7 @@ const Product = () => {
                   New types and levels of safety threats call for advanced safety solutions.The access points of the buildings can be managed by managing the elevators correctly. Appropriate access management system can help ensure smooth flow of people in and out of the building. It will also improve the user experience.
                 </p>
                 <div className="button-blogcontainer">
-                  <button className="btn last-btn">Explore More</button>
+                <button className="btn last-btn" onClick={() => handleNavigate('/physicalaccessmanagement')}>Explore More</button>
                 </div>
 
 

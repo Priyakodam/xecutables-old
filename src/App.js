@@ -61,9 +61,9 @@ function App() {
                     <Route path="/engineering-services" element={<EngineeringService/>} /> 
                     <Route path="/professional-services" element={<ProfessionalServices/>} />
                     <Route path="/maintenance" element={<ServiceAndMaintenance/>} />
-                    <Route path="/ami" element={<AccessManagementIntegration/>} /> 
-                    <Route path="/man" element={<ManagingSolutions/>} />
-                    <Route path="/phyam" element={<PhysicalAccessManagement/>} />
+                    <Route path="/accessmanagementintegration" element={<AccessManagementIntegration/>} /> 
+                    <Route path="/managingsolutions" element={<ManagingSolutions/>} />
+                    <Route path="/physicalaccessmanagement" element={<PhysicalAccessManagement/>} />
 
                 </Routes>
                 <Footer/>

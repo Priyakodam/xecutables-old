@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+        <p>&copy; 2024 All Rights Reserved by xecutables.com</p>
         <p className="designed-by">Designed and developed by <a href="https://prodigit.com">Prodigit</a></p>
       </div>
     </footer>
