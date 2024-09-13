@@ -154,8 +154,8 @@ const Header = () => {
 
       {/* Buttons aligned to the right */}
       <div className="buttons">
-        <a href="/get-in-touch" className="button primary">Get in touch</a>
-        <a href="/try-free" className="button secondary">Try for free</a>
+        <a href="/contact" className="button primary">Get in touch</a>
+      
       </div>
     </header>
   );
