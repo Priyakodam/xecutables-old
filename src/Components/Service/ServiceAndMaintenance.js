@@ -8,25 +8,9 @@ const ServiceAndMaintenance = () => {
     <div>
       <div className="service-maintenance-banner">
         {/* <p className="ser-banner-text">Service And Maintenance</p> */}
-        <h1 className="ser-banner-text">Service And Maintenance</h1>
+        <span className="ser-banner-text">Service And Maintenance</span>
       </div>
-      {/* <div className="cards-container">
-        <div className="card silver">
-          <h2>Silver Plan</h2>
-          <p>Basic maintenance services including monthly check-ups and emergency support.</p>
-          <button className="learn-more-btn">Learn More</button>
-        </div>
-        <div className="card gold">
-          <h2>Gold Plan</h2>
-          <p>Advanced maintenance with priority support and quarterly performance reviews.</p>
-          <button className="learn-more-btn">Learn More</button>
-        </div>
-        <div className="card platinum">
-          <h2>Platinum Plan</h2>
-          <p>Complete premium support with round-the-clock service, including customized reports.</p>
-          <button className="learn-more-btn">Learn More</button>
-        </div>
-      </div> */}
+   
 
       <div className="service-maintenance-container">
         <h1 className="service-heading">Choose Your Plan</h1>

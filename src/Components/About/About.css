@@ -356,10 +356,11 @@
         .progress-section-1{
                 margin-top: 0px;
                 margin-bottom: -45px;
+                margin-left: -28px;
         }
 
 .sec1-banner-text .sec1-heading {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #050a47;
 
@@ -396,6 +397,23 @@
                 margin: 0 auto;
                 margin-top: 40px;
                 margin-bottom: 40px;
+            }
+
+
+
+            .image-section img {
+                max-width: 100%;
+                height: auto;
+                margin-left: -17px;
+            }
+
+
+            .content-section{
+                margin-left: -18px;
+            }
+
+            .keypoint{
+                margin-left: -13px;
             }
 }
 
@@ -455,4 +473,16 @@
                 margin-top: 48px;
                 padding-bottom: 27px;
              }
+
+
+             .sec-5 {
+                display: flex;
+                flex-direction: column;
+             }
+             .main-progress {
+                flex: 0 0 auto;
+                 /* width: 50%;  */
+            }
 }
+
+

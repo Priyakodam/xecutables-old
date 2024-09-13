@@ -337,7 +337,6 @@
 
 
 import React, { useState, useEffect } from 'react';
-import { FaArrowUp } from 'react-icons/fa'; // Importing an up arrow icon from FontAwesome
 import 'bootstrap/dist/css/bootstrap.min.css'; // Importing Bootstrap CSS
 import './About.css'; // For custom styling
 import image1 from './Images/aboutus-8.jpg';
@@ -353,30 +352,7 @@ import { Fade } from 'react-reveal';
 
 
 const About = () => {
-  const [showScroll, setShowScroll] = useState(false);
-
-  // Function to check the scroll position
-  const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400) {
-      setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 400) {
-      setShowScroll(false);
-    }
-  };
-
-  // Function to scroll the page to the top
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  // Adding event listener for scroll
-  useEffect(() => {
-    window.addEventListener('scroll', checkScrollTop);
-    return () => {
-      window.removeEventListener('scroll', checkScrollTop);
-    };
-  }, [showScroll]);
-
+ 
   return (
     <div>
       {/* <h1>About</h1>
@@ -658,12 +634,7 @@ const About = () => {
       {/* Add more content to enable scrolling */}
       <div style={{ height: 'auto' }}></div>
 
-      {/* Up arrow button */}
-      <FaArrowUp
-        className="scrollTop"
-        onClick={scrollTop}
-        style={{ display: showScroll ? 'flex' : 'none', position: 'fixed', bottom: '20px', right: '20px', cursor: 'pointer' }}
-      />
+     
     </div>
   );
 };

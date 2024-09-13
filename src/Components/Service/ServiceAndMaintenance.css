@@ -274,6 +274,12 @@
       content: '★';
       padding-right: 5px;
     }
+
+    .service-maintenance-container {
+      padding: 60px 20px;
+      background-image:none;
+      text-align: center;
+    }
     
 
       }
@@ -333,6 +339,13 @@
       .recommended-badge::before {
         content: '★';
         padding-right: 5px;
+      }
+
+
+      .service-maintenance-container {
+        padding: 60px 20px;
+        background-image:none;
+        text-align: center;
       }
       
   
