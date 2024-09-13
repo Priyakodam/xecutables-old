@@ -80,8 +80,8 @@
       /* Responsive styles */
       @media (max-width: 768px) {
         .contact-container {
-          flex-direction: column;
-          margin-left: 25px;
+          margin-left: -2px;
+          width: 100vw;
         }
       
         .map-container {

@@ -12,7 +12,7 @@ function ServiceMaintenance() {
           style={{ textAlign: "justify" }}
         >
 
-          <h2 className="text-center subheading">service</h2>
+          <h1 >service</h1>
           <p>
             To innovate solutions that go above and beyond the clients’
             expectations and to provide them with end-to-end solutions.

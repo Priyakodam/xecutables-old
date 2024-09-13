@@ -2,7 +2,7 @@
 
 .about-us-section {
     padding: 50px 20px;
-    background-color: #fff;
+  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +20,7 @@
   .about-us-content {
     flex: 1;
     padding: 20px;
+    text-align: left;
   }
   
   .about-us-content h2 {

@@ -26,7 +26,7 @@ const Hero = () => {
   return (
     <div className="video-background-container">
     {/* <div className="video-overlay"></div> */}
-    {/* <video
+    <video
       ref={videoRef}
       autoPlay
       loop
@@ -36,8 +36,8 @@ const Hero = () => {
       className="video-background"
     >
       Your browser does not support the video tag.
-    </video> */}
-    <img className="video-background" src='https://s3.wns.com/S3_5/Images/GenericHeaderBanner/DesktopImg/19227/3120/Shared-Services_HD-1980x1080px.jpg'/>
+    </video>
+    {/* <img className="video-background" src='https://s3.wns.com/S3_5/Images/GenericHeaderBanner/DesktopImg/19227/3120/Shared-Services_HD-1980x1080px.jpg'/> */}
     <div className='textcontainer' >
       {/* <div className="videored-dash" ></div> */}
       <div className="main-text">
