@@ -52,10 +52,10 @@ const Contact = () => {
           <span className="icon">📧</span>
           <p>info@executables.com</p>
         </div>
-        <div className="info-item">
+        {/* <div className="info-item">
           <span className="icon">🌐</span>
           <p>Website: <a href="https://yoursite.com">yoursite.com</a></p>
-        </div>
+        </div> */}
       </div>
       </>
     </div>

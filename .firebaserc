@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "xecutables1",
+    "staging": "xecutables1"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
