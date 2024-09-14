@@ -27,7 +27,7 @@
 }
 
 .physicalaccess-image-under-banner {
-        max-width: 100%;
+        width: 100%;
         /* Ensure the image is responsive */
         height: auto;
         /* Maintain aspect ratio */
@@ -56,6 +56,72 @@
         /* Text color */
 }
 
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+        .physicalaccess-text-container {
+                width: 95%;
+                /* Full width on small screens */
+                padding: 15px;
+                /* Reduce padding for smaller screens */
+                font-size: 0.95rem;
+                /* Adjust font size for better readability */
+        }
+
+
+
+        .physicalaccess-image-container{
+                width:100%;
+        }
+
+
+        .physicalaccess-image-container
+        .physicalaccess-image-under-banner{
+                width: 364px;
+                margin-left: -144px;
+                height: 369px;
+                margin-top: -17px;
+    
+        }
+        .physicalaccess-banner-text {
+                color: white;
+                font-size: 2.5rem;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            }
+
+            .physicalaccess-container
+            .physicalaccess-card {
+             
+                width: 50%;
+                height: 385px;
+                margin-top: 48px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                margin-left: -60px;
+                margin-bottom: 20px;
+            
+              }
+              .physicalaccess-card-heading {
+                font-size: 22px; /* Adjust heading size */
+                margin-bottom: 10px; /* Add space below the heading */
+                text-align: center;
+              }
+
+
+              p {
+                font-size: 1.2em;
+                color: #555;
+                line-height: 1.5;
+                margin: 5px 0;
+            }
+
+
+  
+}
+
 /* Responsive adjustments */
 @media (max-width: 1200px) {
         .physicalaccess-text-container {
@@ -66,7 +132,7 @@
 
 @media (max-width: 768px) {
         .physicalaccess-text-container {
-                width: 100%;
+                width: 95%;
                 /* Full width on small screens */
                 padding: 15px;
                 /* Reduce padding for smaller screens */
@@ -143,13 +209,17 @@ p {
                 margin: 0 10px;
                 /* Adjust margins */
         }
+
+     
 }
 
 @media (max-width: 480px) {
         .physicalaccess-image-row-container {
-                flex-direction: column;
-                /* Stack items vertically on very small screens */
-        }
+                        flex-direction: column;
+                        margin-left: -5px;
+                        margin-right: 15px;
+                    }
+        
 
         .physicalaccess-image-item-container {
                 width: 100%;
@@ -161,6 +231,88 @@ p {
 
 
 
+
+
+@media (max-width: 767px) {
+        .physicalaccess-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* width: 100%; */
+        }
+        .physicalaccess-container 
+        .physicalaccess-image-container {
+                width: 100%;
+        }
+
+        .physicalaccess-image-container .physicalaccess-image-under-banner {
+                width: 340px;
+                margin-left: -97px;
+                height: 250px;
+
+        }
+
+        .physicalaccess-container .physicalaccess-card {
+
+                width: 114%;
+                height: 442px;
+                margin-top: 15px;
+                padding: 20px;
+                /* Add padding inside the card */
+                border: 1px solid #ddd;
+                /* Add border for the card */
+                border-radius: 8px;
+                /* Add rounded corners */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                /* Add shadow for a card effect */
+                margin-left: -70px;
+                margin-bottom: 20px;
+        }
+
+        .physicalaccess-container {
+                display: flex;
+                flex-direction: column;
+                /* width:100% */
+
+        }
+
+
+        .related-posts {
+                text-align: center;
+                font-size: 20px;
+        }
+
+        .physicalaccess-text-container .read-more-btn {
+                margin-left: 80px;
+        }
+
+        .physicalaccess-banner-text {
+                color: white;
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+
+        .physicalaccess-banner {
+                background-image: url('./BlogImages/ban-acc.png');
+                /* Add the URL to your banner image */
+                background-size: cover;
+                background-position: center;
+                height: 250px;
+                /* Adjust the height of the banner */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+        }
+
+
+        .physicalaccess-card-heading {
+                font-size: 22px;
+                margin-bottom: 10px;
+                text-align: center;
+        }
+}
 
 
 
@@ -191,8 +343,8 @@ p {
       }
       
       .physicalaccess-image-container {
-        flex: 1; /* Allows image container to grow and shrink */
-        max-width: 50%; /* Control the maximum width of the image container */
+         /* Allows image container to grow and shrink */
+        width: 50%; /* Control the maximum width of the image container */
       }
 
       .physicalaccess-card-heading{
@@ -205,8 +357,8 @@ p {
       }
       
       .physicalaccess-card {
-        flex: 1; /* Allows card container to grow and shrink */
-        max-width: 30%; /* Control the maximum width of the card container */
+      
+width: 30%; /* Control the maximum width of the card container */
         height: 405px;
         margin-top: 55px;
         padding: 20px; /* Add padding inside the card */
@@ -220,25 +372,15 @@ p {
         margin-bottom: 10px; /* Add space below the heading */
       }
       
-      .card-points {
-        list-style: none; /* Remove default list styling */
-        padding: 0; /* Remove default padding */
-      }
-      
-      .card-points li {
-        margin-bottom: 8px; /* Add space between list items */
-      }
+ 
       
       @media (max-width: 768px) {
         .physicalaccess-container {
-          flex-direction: column; /* Stack image and card on top of each other on small screens */
+          flex-direction: row; /* Stack image and card on top of each other on small screens */
           align-items: center; /* Center items horizontally */
         }
       
-        .physicalaccess-image-container,
-        .physicalaccess-card {
-          max-width: 100%; /* Ensure both elements fit within the screen width */
-        }
+    
       }
       
 
