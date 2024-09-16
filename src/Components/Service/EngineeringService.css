@@ -23,7 +23,7 @@
        margin: 0;
        margin-top: -810px;
        padding: 10px;
-       font-size: 40px;
+       font-size: 50px;
        background: linear-gradient(90deg, blue, red);
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
@@ -199,12 +199,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(to right, #A90E83, #0150E1);
+    /* background-image: linear-gradient(to right, #A90E83, #0150E1); */
+    background-color: white;
   }
   
   .right-section-eng h2 {
     margin-top: 30px;
-    background: linear-gradient(90deg, white, red);
+    background: linear-gradient(90deg, blue, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -212,7 +213,7 @@
   .right-section-eng p {
     font-size: 1.1em;
     line-height: 1.6;
-    color: white;
+    color: black;
   }
   
   .demo-button {
@@ -231,7 +232,8 @@
   }
   .engimban{
     width: 100%;
-    
+    border-radius: 10px;
+
   }
   
 
