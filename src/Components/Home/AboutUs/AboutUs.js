@@ -31,7 +31,7 @@ function AboutUs() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
             </p> */}
             <button className="about-us-button" onClick={handleNavigation}>
-              More About Us
+            Explore More
             </button>
           </div>
         </Fade>

@@ -8,7 +8,7 @@ function Products() {
   const navigate = useNavigate();
 
   const handleNavigation = () => {
-    navigate('/about');  // Navigate to /about route
+    navigate('/product');  // Navigate to /about route
   };
 
   return (
@@ -33,7 +33,7 @@ function Products() {
         </p>
        
         <button className="product-button" onClick={handleNavigation}>
-              More About Us
+        Explore More
             </button>
       </div>
       </Fade>

@@ -1,8 +1,15 @@
 import React from 'react'
 import img from "../Images/img2.jpeg";
+import { useNavigate } from 'react-router-dom';
 import './ServiceMaintenance.css';
 
 function ServiceMaintenance() {
+  const navigate = useNavigate();
+
+  const handleNavigation = () => {
+    navigate("/engineering-services");  
+  };
+
   return (
     <div className="homecontainer mt-5">
       <div className="background-homecontainer">
@@ -22,7 +29,7 @@ function ServiceMaintenance() {
 
           <a href="/products" style={{ textDecoration: 'none' }}>
             <div className="button-homecontainer">
-              <button className="btn btn-primary narrow-button" style={{ background: "linear-gradient(to bottom right, #007bff, #ff073a)", color: "white" }}>Explore More</button>
+              <button className="btn btn-primary narrow-button" onClick={handleNavigation} style={{ background: "linear-gradient(to bottom right, #007bff, #ff073a)", color: "white" }}>Explore More</button>
             </div>
           </a>
 
