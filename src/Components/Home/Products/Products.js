@@ -26,12 +26,10 @@ function Products() {
       <div className="text-container">
         <h1>Product</h1>
         <p>
-          Liminal’s Link™ Index profiles 32 leading vendors looking at momentum, 
-          market strength, stability, product scope, and leadership — finding only 
-          21.3% of vendors meet buyer demands. Download the full report to get a 
-          complete view of the market challenges facing buyers, key purchasing decisions, 
-          and product demand criteria — and learn why Onfido is ranked as a global Market Leader, 
-          and a specific Regional Leader in Europe.
+        Nebula is a product that integrates various facets of physical access and
+         management in an organisation. It creates a seamless platform to access 
+         all the major domains like visitor management, parking management, employee
+          management, mobile card management, etc.
         </p>
        
         <button className="product-button" onClick={handleNavigation}>

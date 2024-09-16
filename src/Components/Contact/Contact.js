@@ -30,7 +30,7 @@ const Contact = () => {
       <div className="map-container">
         <iframe 
           title="Google Map" 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.92146527344!2d-74.0059413!3d40.7127761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0!2zMzLCsDQyJzQ2LjAiTiA3NMKwMDAnMDIuMCJX!5e0!3m2!1sen!2sus!4v1619711353319!5m2!1sen!2sus" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.0914084230174!2d77.5772353!3d13.1052759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1bb9bf792ddf%3A0x909d8985a547ee7d!2sMaruthi%20Nagar%2C%20Yelahanka%2C%20Bengaluru%2C%20Karnataka%20560064!5e0!3m2!1sen!2sin!4v16323456789" 
           width="100%" 
           height="550" 
           style={{ border: 0 }} 

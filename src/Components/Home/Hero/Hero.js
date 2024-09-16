@@ -1,59 +1,97 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 import video from "../Images/video.mp4";
-// import { Fade } from 'react-reveal';
-import { Carousel } from 'react-bootstrap';
-import image1 from '../../About/Images/aboutus-4.jpg';
-import cc5 from '../../About/Images/aboutus-1.jpg';
-import part1 from '../../About/Images/aboutus-2.jpg';
-import computer123 from '../../About/Images/aboutus-3.jpg';
-import computer1 from '../../About/Images/aboutus-13.webp';
-import applelaptop from '../../About/Images/aboutus-8.jpg'
+import video1 from "../Images/video1.mp4";
+import video2 from "../Images/video2.mp4";
+import video3 from "../Images/video3.mp4";
 import "./Hero.css"
 
 const Hero = () => {
-
-  const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef(null);
 
-  const togglePlay = () => {
-    if (isPlaying) {
-      videoRef.current.pause();
-    } else {
-      videoRef.current.play();
-    }
-    setIsPlaying(!isPlaying);
-  };
   return (
-    <div className="video-background-container">
-    {/* <div className="video-overlay"></div> */}
-    <video
-      ref={videoRef}
-      autoPlay
-      loop
-      muted
-      playsInline
-      src={video}
-      className="video-background"
-    >
-      Your browser does not support the video tag.
-    </video>
-    {/* <img className="video-background" src='https://s3.wns.com/S3_5/Images/GenericHeaderBanner/DesktopImg/19227/3120/Shared-Services_HD-1980x1080px.jpg'/> */}
-    <div className='textcontainer' >
-      {/* <div className="videored-dash" ></div> */}
-      <div className="main-text">
-        <span className="line1">Delivering and integrating solutions that are futuristic,</span>
-        <span className="line2">  practical &amp; comprehensive</span>
-      </div>
-      <div className="sub-text">
-        <span className="subline1">We provide always our best services to our clients and always try to</span>
-        <span className="subline2">achieve our client's trust and satisfaction</span>
-      </div>
+    <div className="carousel-container">
+      <Carousel
+        autoPlay
+        infiniteLoop
+        showArrows={true}
+        showThumbs={false}
+        showStatus={false}
+        interval={5000}
+        className="carousel"
+        dynamicHeight={true}
+        
+      >
+        {/* Repeat the video in each slide */}
+        <div className="video-background-container">
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            src={video1}
+            className="video-background"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <div className="textcontainer">
+            <div className="main-text">
+              <span className="line1">Innovative Solutions for a Smarter Tomorrow</span>
+            </div>
+            <div className="sub-text">
+              <span className="subline1">Transforming ideas into cutting-edge realities.</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="video-background-container">
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            src={video2}
+            className="video-background"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <div className="textcontainer">
+            <div className="main-text">
+              <span className="line1">Practical Technologies Shaping the Future</span>
+            </div>
+            <div className="sub-text">
+              <span className="subline1">Bridging innovation with real-world applications.</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="video-background-container">
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            src={video3}
+            className="video-background"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <div className="textcontainer">
+            <div className="main-text">
+              <span className="line1">Innovative Solutions for a Smarter Tomorrow</span>
+            </div>
+            <div className="sub-text">
+              <span className="subline1">Seamlessly connecting solutions for lasting impact.</span>
+            </div>
+          </div>
+        </div>
+      </Carousel>
     </div>
-    {/* <button className="toggle-button" onClick={togglePlay}>
-      {isPlaying ? '❚❚' : '▶'}
-    </button> */}
-  </div>
   )
 }
 
-export default Hero
+export default Hero;

@@ -19,16 +19,17 @@ function AboutUs() {
             <h2>About</h2>
             <p>Check out our company story and work process</p>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo consequat.
+            Xecutables is a company dedicated to create business solutions that are practical,
+             scalable and reliable. We have created a unique platform to integrate numerous 
+             critical services at one place. With Artificial Intelligence (AI) as a critical 
+             layer, business-specific solutions are created and deployed. They help in improving
+              the efficiency of the processes that are critical to the business.
             </p>
-            <p>
+            {/* <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-            </p>
+            </p> */}
             <button className="about-us-button" onClick={handleNavigation}>
               More About Us
             </button>

@@ -14,11 +14,10 @@ function ServiceMaintenance() {
 
           <h1 >service</h1>
           <p>
-            To innovate solutions that go above and beyond the clients’
-            expectations and to provide them with end-to-end solutions.
-            We strive to shape dreams into reality. The process of developing
-            the solutions is like composing a song or narrating a story. The
-            sole aim is to create value and be able to bring a smile to our clients.
+          Engineering services cover and manage various business processes. 
+          These services help provide end-to-end, customised solutions for 
+          all the work processes. The business workflow of these processes 
+          is then managed to improve the overall efficiency of business operations.
           </p>
 
           <a href="/products" style={{ textDecoration: 'none' }}>
